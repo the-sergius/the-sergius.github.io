@@ -11,11 +11,12 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            overflow-x: hidden;
         }
         h1 {
-            font-size: 3em;
-            margin-top: 20px;
-            margin-left: 40px;
+            font-size: 2.2em;
+            margin-top: 10px;
+            margin-left: 10px;
             text-align: left;
             color: #fff;
             font-family: serif;
@@ -24,23 +25,52 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100vw;
         }
         .logo-container img {
-            width: 512px;
-            height: 512px;
+            width: 280px;
+            height: 280px;
             object-fit: contain;
             background: #111;
             border-radius: 8px;
         }
         .descripcion {
-            max-width: 900px;
+            max-width: 95vw;
             margin: 0 auto;
-            font-size: 1.3em;
-            line-height: 1.4;
+            font-size: 1.05em;
+            line-height: 1.3;
             letter-spacing: 1px;
-            margin-bottom: 40px;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .proyectos {
+            max-width: 95vw;
+            margin: 0 auto 18px auto;
+            text-align: center;
+        }
+        .proyectos h2 {
+            color: #4fc3f7;
+        }
+        .proyectos ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        .proyectos li {
+            margin-bottom: 12px;
+        }
+        .proyectos a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .proyectos span {
+            color: #aaa;
+            font-size: 0.95em;
         }
     </style>
 </head>
@@ -54,5 +84,17 @@
         Me encanta que te pases por aquí. Aquí puedes ver todos los proyectos de programación públicos de TheSergius.<br>
         Visita mi <a href="https://github.com/the-sergius" target="_blank" style="color:#4fc3f7;">GitHub</a>.
     </div>
+    <section class="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>
+                <a href="bass-intruzion.html">
+                    Bass Intruzion
+                </a>
+                <span>&nbsp;— Proyecto musical de hard techno con sonido propio.</span>
+            </li>
+            <!-- Aquí puedes añadir más proyectos en el futuro -->
+        </ul>
+    </section>
 </body>
 </html>
