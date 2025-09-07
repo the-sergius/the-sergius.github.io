@@ -80,41 +80,35 @@
         <img src="ts.png" alt="Logo TS">
     </div>
     <div class="descripcion">
-        Bienvenido al espacio principal de TheSergius.<br>
-        Me encanta que te pases por aquí. Aquí puedes ver todos los proyectos de programación públicos de TheSergius.<br>
-        Visita mi <a href="https://github.com/the-sergius" target="_blank" style="color:#4fc3f7;">GitHub</a>.
+        <text class="descripcion" id="console">
+            
+        </text>
+        <a href="https://github.com/the-sergius" target="_blank" style="color:#4fc3f7;">GitHub</a>.
+        <script>
+            var text = "Bienvenido al espacio principal de TheSergius.Me encanta que te pases por aquí. Aquí puedes ver todos los proyectos de programación públicos de TheSergius.Visita mi ";
+            var i = 0;
+            var console = document.getElementById("console");
+            function type() {
+                if (i < text.length) {
+                    console.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 7);
+                }
+            }
+            type();
+        </script>
     </div>
 <section class="links">
-    <h2>Links del Proyecto Principal</h2>
+    <h2>Links del Proyecto</h2>
 
             <a href="https://github.com/the-sergius" target="_blank" style="color:#4fc3f7;">GitHub</a>
             </br>
             <a href="https://www.linkedin.com/in/the-sergius" target="_blank" style="color:#4fc3f7;">LinkedIn</a>
             </br>
             <a href="https://www.youtube.com/@TheSergius" target="_blank" style="color:#4fc3f7;">YouTube</a>
-   
-    <section class="servicios" style="display: none;">
-        <h2>Servicios</h2>
-        <h3>Puesta a punto de equipos</h3>
-        <p>Te ofrezco mi servicio de puesta a punto de equipos por 30€. En este servicio, te aseguro que tu ordenador vaya a la velocidad de la luz y que esté  seguro de virus y malware.</p>
-        <h3>Creación de landing pages</h3>
-        <p>Te ofrezco mi servicio de creación de landing pages por 150€. En este servicio, te aseguro que tu landing page sea atractiva y funcional, cumpliendo con tus necesidades y objetivos.</p>
-        <h3>Automatización de tareas</h3>
-        <p>Te ofrezco mi servicio de automatización de tareas. En este servicio, te aseguro que todas tus tareas se realizen de manera automática, sin necesidad de que tengas que estar pendiente de ellas.</p>
-        <p>Si estás interesado en alguno de mis servicios, no dudes en contactarme en el <a style="color:green" href="tel:671959910">671959910</a> o en el correo <a style="color:green" font-color ="green"href="mailto:sergio.qo000@gmail.com">sergio.qo000@gmail.com</a>.</p>
-    </section>
-
-    <section class="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <ul>
-            <li>
-                <a href="bass-intruzion.html">
-                    Bass Intruzion
-                </a>
-                <span>&nbsp;— Proyecto musical de hard techno con sonido propio.</span>
-            </li>
-            <!-- Aquí puedes añadir más proyectos en el futuro -->
-        </ul>
-    </section>
+            </br>
+            <a href="bass-intruzion.html "target="_blank" style="color:#4fc3f7;">
+                Bass Intruzion
+            </a>
 </body>
 </html>
